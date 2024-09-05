@@ -1,0 +1,79 @@
+/* From Uiverse.io by alexroumi */
+.btn-down {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-down::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.btn-down:hover {
+    color: #e8e8e8;
+}
+
+.img:hover {
+    color: #e8e8e8;
+}
+
+.btn-down:hover::before {
+    width: 100%;
+}
+
+.btn-submit {
+    position: relative;
+    background-color: green;
+    /* Initial fallback color */
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 1s ease;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 13rem;
+}
+
+.btn-submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(to right, green, rgb(3, 252, 61));
+    z-index: -1;
+    transition: left 1s ease;
+}
+
+.btn-submit:hover::before {
+    left: 0;
+}
+
+
+
+

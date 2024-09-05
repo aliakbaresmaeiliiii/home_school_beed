@@ -1,0 +1,84 @@
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+  class="flex flex-col justify-center items-center bg-sky-50 mobile:py-4 px-4"
+>
+  <div class="font-medium text-4xl pb-4 text-blue-800">Register Now!</div>
+  <div class="grid desktop:grid-cols-2 desktop:gap-4 rounded-md w-full">
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>Parent Name</mat-label>
+      <input matInput type="text" formControlName="parentName" />
+      @if (parentName) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>Age</mat-label>
+      <input matInput type="text" formControlName="age" />
+      @if (age) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>Email</mat-label>
+      <input matInput type="text" formControlName="email" />
+      @if (email) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>School</mat-label>
+      <input matInput type="text" formControlName="school" />
+      @if (school) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name" />
+      @if (name) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>Contact Number</mat-label>
+      <input matInput type="text" formControlName="contactNumber" />
+      @if (contactNumber) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-ful">
+      <mat-label>Parent Email</mat-label>
+      <input matInput type="text" formControlName="parentEmail" />
+      @if (parentEmail) {
+      <button matSuffix mat-icon-button aria-label="Clear">
+        <mat-icon>close</mat-icon>
+      </button>
+      }
+    </mat-form-field>
+    <mat-checkbox formControlName="pepperoni">
+      <span class="text-sm text-gray-600 opacity-45">
+        All the Lorem Ipsum generators on the Internet
+      </span>
+    </mat-checkbox>
+  </div>
+
+  <button class="btn-submit flex items-center rounded-full w-60 ">
+    <span>
+      <img src="../../../assets/images/btn-register.png" alt="" />
+    </span>
+    <span class="m-auto text-base font-medium">SUBMIT APPLICATION</span>
+  </button>
+</form>

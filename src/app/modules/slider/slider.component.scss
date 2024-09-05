@@ -1,0 +1,120 @@
+.bg-slider {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(0deg, rgba(0, 212, 255, 0.4766281512605042) 0%, rgba(9, 9, 121, 1) 100%);
+}
+
+
+.triangle-square {
+    margin-top: -225px;
+    position: absolute;
+    width: 138px;
+    height: 159px;
+}
+
+.triangle-square::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 80px solid red;
+    border-bottom: 80px solid transparent;
+    border-top: 80px solid red;
+    border-right: 80px solid transparent;
+}
+
+.badge {
+    z-index: 99999;
+    font-size: 3rem;
+    transform: rotate(-46deg);
+    transform-origin: 3% 61%;
+    font-weight: 900;
+    font-size: 21px;
+    color: #fff;
+    font-size: 27px;
+}
+.badge1 {
+    z-index: 99999;
+    font-size: 3rem;
+    transform: rotate(-46deg);
+    transform-origin: 4% 45%;
+    font-weight: 900;
+    font-size: 21px;
+    color: #fff;
+    font-size: 27px;
+}
+
+.color {
+    color: #3ed2ff;
+}
+
+.btn-submit {
+    position: absolute;
+    background-color: green;
+    /* Initial fallback color */
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 1s ease;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 13rem;
+}
+
+.btn-submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(to right, green, rgb(3, 252, 61));
+    z-index: -1;
+    transition: left 1s ease;
+}
+
+.btn-submit:hover::before {
+    left: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+    .triangle-square {
+        margin-top: -165px;
+        position: absolute;
+        width: 138px;
+        height: 159px;
+    }
+    
+    .badge {
+        z-index: 99999;
+        transform: rotate(-46deg);
+        transform-origin: 7% 32%;
+        font-weight: 600;
+        font-size: 21px;
+        color: #fff;
+        font-size: 15px;
+    }
+    .badge1 {
+        z-index: 99999;
+        transform: rotate(-46deg);
+        transform-origin: 8% 1%;
+        font-weight: 700;
+        font-size: 21px;
+        color: #fff;
+        font-size: 15px;
+    }
+    .triangle-square::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid red;
+        border-bottom: 50px solid transparent;
+        border-top: 50px solid red;
+        border-right: 50px solid transparent;
+    }
+  }
